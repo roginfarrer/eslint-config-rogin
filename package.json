@@ -1,13 +1,16 @@
 {
   "name": "eslint-config-rogin",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "ESLint configuration for projects that I do",
   "main": "index.js",
-  "repository": "https://github.com/roginfarrer/eslint-config-rogin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roginfarrer/eslint-config-rogin"
+  },
   "author": "Rogin Farrer <rogin@roginfarrer.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write './*.js'",
+    "format": "prettier --write './*.{js,json}'",
     "lint": "eslint './*.js' --quiet --fix"
   },
   "devDependencies": {
