@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-rogin",
+  "version": "1.0.0",
+  "description": "ESLint configuration for projects that I do",
+  "main": "index.js",
+  "repository": "https://github.com/roginfarrer/eslint-config-rogin",
+  "author": "Rogin Farrer <rogin@roginfarrer.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write './*.js'",
+    "lint": "eslint './*.js' --quiet --fix"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "eslint-config-kentcdodds": "^14.7.0"
+  }
+}
