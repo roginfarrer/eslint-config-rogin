@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rogin",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "ESLint configuration for projects that I do",
   "main": "index.js",
   "repository": {
@@ -10,17 +10,47 @@
   "author": "Rogin Farrer <rogin@roginfarrer.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write './*.{js,json}'",
-    "lint": "eslint './*.js' --quiet --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "@types/node": "^16.7.13",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.4.2"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.15.0",
-    "@typescript-eslint/parser": "^2.15.0",
-    "eslint-config-kentcdodds": "^14.7.0"
+    "@babel/eslint-parser": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "@types/node": "^16.7.13",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2",
+    "semantic-release": "^18.0.0",
+    "typescript": "^4.4.2"
   }
 }
