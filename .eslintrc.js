@@ -97,17 +97,7 @@ module.exports = {
         allowTemplateLiterals: true,
       },
     ],
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'es5',
-        singleQuote: true,
-        printWidth: 80,
-        //below line only for windows users facing CLRF and eslint/prettier error
-        // non windows users feel free to delete it
-        endOfLine: 'auto',
-      },
-    ],
+    'prettier/prettier': 'error',
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/anchor-is-valid': [
       'warn',
@@ -120,4 +110,4 @@ module.exports = {
     '@typescript-eslint/comma-dangle': ['off'],
     'react/jsx-props-no-spreading': 'off',
   },
-};
+}
