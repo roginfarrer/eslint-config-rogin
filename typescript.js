@@ -1,8 +1,4 @@
 module.exports = {
-  globals: {
-    React: true,
-    JSX: true,
-  },
   extends: [
     'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`,
     'airbnb-typescript',
@@ -36,4 +32,4 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-};
+}
